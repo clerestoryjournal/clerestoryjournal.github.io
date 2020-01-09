@@ -1,0 +1,147 @@
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 230px auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  font-family: 'EB Garamond', serif;
+  font-size: 12pt;
+  font-style: normal;
+}
+
+.titleofpage {
+  font-family: 'tex_gyre_herosbold_italic';
+  font-size: 10pt
+}
+
+.blurb {
+  font-family: 'EB Garamond', serif;
+  font-size: 9pt
+}
+
+.blurb2 {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 8pt;
+  text-align: right;
+}
+
+.rightmenu {
+  font-family: 'tex_gyre_herosbold', serif;
+  font-size: 10pt;
+  text-align: right
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontally {
+ height: 40px;
+ overflow: hidden;
+ position: relative;
+ border: 0px solid olive;
+}
+.horizontally p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left;
+ /* Starting position */
+ -moz-transform:translateX(15%);
+ -webkit-transform:translateX(15%);
+ transform:translateX(15%);
+ /* Apply animation to this element */
+ -moz-animation: horizontally 1s linear infinite alternate;
+ -webkit-animation: horizontally 1s linear infinite alternate;
+ animation: horizontally 1s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes horizontally {
+ 0%   { -moz-transform: translateX(15%); }
+ 100% { -moz-transform: translateX(0%); }
+}
+@-webkit-keyframes horizontally {
+ 0%   { -webkit-transform: translateX(15%); }
+ 100% { -webkit-transform: translateX(0%); }
+}
+@keyframes horizontally {
+ 0%   {
+ -moz-transform: translateX(15%); /* Browser bug fix */
+ -webkit-transform: translateX(15%); /* Browser bug fix */
+ transform: translateX(15%);
+ }
+ 100% {
+ -moz-transform: translateX(0%); /* Browser bug fix */
+ -webkit-transform: translateX(0%); /* Browser bug fix */
+ transform: translateX(0%);
+ }
+}
+
+@font-face {
+    font-family: 'tex_gyre_herosbold';
+    src: url('fonts/texgyreheros-bold-webfont.woff2') format('woff2'),
+         url('fonts/texgyreheros-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tex_gyre_herosbold_italic';
+    src: url('fonts/texgyreheros-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/texgyreheros-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tex_gyre_herositalic';
+    src: url('fonts/texgyreheros-italic-webfont.woff2') format('woff2'),
+         url('fonts/texgyreheros-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tex_gyre_herosregular';
+    src: url('fonts/texgyreheros-regular-webfont.woff2') format('woff2'),
+         url('fonts/texgyreheros-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tex_gyre_heros_cnbold';
+    src: url('fonts/texgyreheroscn-bold-webfont.woff2') format('woff2'),
+         url('fonts/texgyreheroscn-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tex_gyre_heros_cnbold_italic';
+    src: url('fonts/texgyreheroscn-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/texgyreheroscn-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tex_gyre_heros_cnitalic';
+    src: url('fonts/texgyreheroscn-italic-webfont.woff2') format('woff2'),
+         url('fonts/texgyreheroscn-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tex_gyre_heros_cnregular';
+    src: url('fonts/texgyreheroscn-regular-webfont.woff2') format('woff2'),
+         url('fonts/texgyreheroscn-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
