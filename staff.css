@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 220px auto auto;
-  grid-gap: 10px;
+  grid-gap: 20px;
   padding: 10px;
   font-family: 'EB Garamond', serif;
   font-size: 12pt;
